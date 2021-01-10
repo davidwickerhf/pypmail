@@ -15,7 +15,17 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 
-# INSTACLIENT PACKAGE
+# ProtonMail PACKAGE
 from pypmail import LOGGER
+import pypmail
 from pypmail.client.constants import (ClientUrls, APIUrls, Paths)
 from pypmail.errors import *
+
+# ProtnMail Modules
+from pypmail.client.component import PMComponent
+from pypmail.client.checkers import PMCheckers
+from pypmail.client.navigator import PMNavigator
+from pypmail.client.auth import PMAuth
+
+# ProtonMail Client
+from pypmail.client.pypmail import ProtonMail
