@@ -39,6 +39,7 @@ class PMAuth(PMNavigator):
         LOGGER.debug('Selected account plan')
 
         # The page should load at this point - it might take a while
+        time.sleep(5)
         username_input = self._find_element(EC.presence_of_element_located((By.XPATH, Paths.SIGNUP_USERNAME)), wait_time=4)
         username_input.send_keys(username)
         LOGGER.debug('Inputted username')
